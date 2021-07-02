@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BootEx08.html</title>
+
+<!-- 부트스트랩 css -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<!-- 부트스트랩 script -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- 부트스트랩 테마 css -->
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+</head>
+<body>
+
+<div>
+	<h1>Glyphicons</h1>
+	<hr>
+</div>
+
+<div>
+	<!-- 벡터 기반의 이미지로 렌더링하는 것이 아니라
+	     내부적으로 텍스트처럼 이용되기 때문에
+	     크기를 지정할 경우 font-size로 지정해야 함 -->
+	아이콘: <span class="glyphicon glyphicon-th-list"
+			      style="font-size: 30px; color: blue;"></span>
+</div>
+
+<br><br>
+
+<!-- Attribute Content Type → Simple Type → 적용 안 됨 -->
+<div>
+	<input type="button" class="glyphicon glyphicon-print">
+</div>
+
+<!-- Attribute Content Type → Complex Type → 적용 됨 -->
+<div>
+	<button type="button" class="btn btn-default">
+		<span class="glyphicon glyphicon-print"></span>
+		인쇄하기
+	</button>
+</div>
+
+<br><br>
+
+<div class="btn-group" role="group">
+	<button type="button" class="btn btn-default">Left</button>
+	<button type="button" class="btn btn-default">Middle</button>
+	<button type="button" class="btn btn-default">Right</button>
+</div>
+
+<br><br>
+
+<div class="btn-group" role="group">
+	<button type="button" class="btn btn-default">
+	<span class="glyphicon glyphicon-align-left"></span></button>
+	<button type="button" class="btn btn-default">
+	<span class="glyphicon glyphicon-align-center"></span></button>
+	<button type="button" class="btn btn-default">
+	<span class="glyphicon glyphicon-align-right"></span></button>
+</div>
+
+</body>
+</html>
